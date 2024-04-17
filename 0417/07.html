@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+            float:left;
+            padding: 15px;
+        }
+
+        li:first-child{
+            border-radius: 10px 0 0 10px; 
+        }
+        li:last-child{
+            border-radius: 0 10px 10px 0;
+        }
+        li:nth-child(2n){
+            background: blue;
+            color: yellow;
+            /*파란색은 검은 글씨가 눈에 잘 안띄어서 색을 변경했습니다.*/
+        }
+        li:nth-child(2n+1){
+            background: violet;
+        }
+    </style>
 </head>
 <body>
-    
+    <ul>
+        <li>1번째</li>
+        <li>2번째</li>
+        <li>3번째</li>
+        <li>4번째</li>
+        <li>5번째</li>
+        <li>6번째</li>
+        <li>7번째</li>
+    </ul>
 </body>
 </html>
