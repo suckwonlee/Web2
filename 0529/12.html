@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        body{
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #menu{
+            width: 260px;
+            float: right;
+        }
+
+        #section{
+            width: 700px;
+            float: left;
+        }
+        li{
+            list-style: none;
+        }
+        /* 소형 디바이스 스타일 */
+        @media screen and (max-width: 767px) {
+            body{
+                width: auto;
+            }
+            #menu{
+                width: auto;
+                float: auto;
+            }
+            #section{
+                width: auto;
+                float: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="section">
+        <h1>반응형 웹 패턴 4(우측 메뉴가 아래쪽으로 이동)</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus earum delectus at assumenda natus ullam, omnis ipsa excepturi hic doloremque odit dicta maxime explicabo placeat quibusdam aperiam, quas debitis veritatis?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea facilis, cum voluptatibus dignissimos quasi delectus. Obcaecati, fugit necessitatibus. Odio harum eaque et vero, at quia perferendis est incidunt quos eligendi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum culpa aliquid, repellat dolore quasi perferendis iure nemo obcaecati deleniti veritatis harum, officia voluptatem nostrum voluptate totam quod qui modi excepturi.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas fuga sint delectus minus, exercitationem veritatis officia quam provident, possimus sit praesentium neque eveniet optio quo consequatur, officiis aliquam? Fuga, illum.
+        </p>
+    </div>
+    <div id="menu">
+        <ul>
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+        </ul>
+    </div>
+
+</body>
+</html>
