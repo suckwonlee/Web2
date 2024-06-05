@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let date=new Date();
+        let hours=date.getHours();
+        let result= "";
+
+        if(hours<5){
+            result="잠을 더 잘 수 있어요";
+        }
+        else if(hours<7){
+            result="등교 준비를 하세요";
+        }
+        else if(hours<9){
+            result="학교에 등교를 하세요";
+        }
+        else if(hours<12){
+            result='학교 오전 수업에 집중하세요';
+        }
+        else if(hours<14){
+            result='밥을 맛있게 먹는다 실시!';
+        }
+        else if(hours<18){
+            result="어쭈? 오후 수업에 집중하세요"
+        }
+        else{
+            result="하교하십쇼"
+        }
+
+        alert(result);
+    </script>
+</body>
+</html>
