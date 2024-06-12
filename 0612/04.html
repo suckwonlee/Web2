@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function anonymousCallTen(fun){
-            for(let i = 0; i<10; i++){
+        function anonymousCallTen(fun,n){
+            for(let i = 0; i<n; i++){
                 fun(i+1);}
         }
 
@@ -14,7 +14,8 @@
             alert("익명함수 호출됨 \n"+i);
         }
 
-        anonymousCallTen(fun);
+        let n=parseInt(prompt("반복횟수를 정수로 입력해주세요.",10));
+        anonymousCallTen(fun,n);
     </script>
 </head>
 <body>
