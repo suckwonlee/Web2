@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let obj;
+        function intervalnow(){
+            let now = new Date();
+            obj.innerHTML=now.toString();
+        }
+        function makeclock(){
+            obj=document.getElementById("clock");
+            setInterval(intervalnow,1000);
+        }
+    </script>
+</head>
+<body onload="makeclock()">
+    <h1 id="clock"></h1>
+</body>
+</html>
