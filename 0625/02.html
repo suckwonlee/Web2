@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Basic</title>
+    <!-- 고전이벤트 모델을 사용한 이벤트 처리 방법 -->
+    <script>
+        window.onload = function() {
+            let BTN1 = document.getElementById("BTN1");
+            let BTN2 = document.getElementById("BTN2");
+
+            BTN1.onclick = function() {
+                document.body.style.backgroundColor = "blue";
+            };
+
+            BTN2.onclick = function() {
+                document.body.style.backgroundColor = "white";
+            };
+        };
+    </script>
+</head>
+<body>
+    <button id="BTN1">배경색 변경</button>
+    <button id="BTN2">원상복구</button>
+</body>
+</html>
